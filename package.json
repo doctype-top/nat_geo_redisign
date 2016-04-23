@@ -1,0 +1,9 @@
+{
+  	"name": "nat_geo_study_project",
+  	"version": "0.1.0",
+  	"description": "study project",
+  	"author": "alex posseda",
+  	"devDependencies": {
+  		"git": "^0.1.5"
+	}
+}
