@@ -1,0 +1,68 @@
+.nav{
+	font-size: 0;
+	li{
+		display: inline-block;
+		vertical-align: top;
+		width: 117px;
+		height: 60px;
+		position: relative;
+		color: #555555;
+		text-align: center;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 5px;
+			background-color: #555555;
+			top: 13px;
+			left: 0;
+		}
+		a{
+			display: block;
+			height: 100%;
+			font-size: 16px;
+			color: inherit;
+			text-decoration: none;
+			font-family: @font-semibold;
+			position: relative;
+			.icon{
+				background-color: #fbfbfb;
+				display: block;
+				margin: 0 auto 15px auto;
+				padding: 0 3px;
+			}
+		}
+		&.active{
+			color: #fdcc05;
+			a{
+				text-transform: uppercase;
+				.icon{
+					&-home{
+						background-position: -28px 0;
+					}
+					&-photo{
+						background-position: -28px -27px;
+					}
+					&-video{
+						background-position: -28px -57px;
+					}
+					&-env{
+						background-position: -28px -87px;
+					}
+					&-travel{
+						background-position: -28px -117px;
+					}
+					&-adventure{
+						background-position: -28px -147px;
+					}
+					&-tv{
+						background-position: -28px -177px;
+					}
+					&-kids{
+						background-position: -28px -207px;
+					}
+				}
+			}
+		}
+	}
+}

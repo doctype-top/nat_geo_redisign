@@ -1,0 +1,83 @@
+@import "import/font";
+@import "import/_mixins";
+body{
+	background-color: #fbfbfb;
+	font-family: @font-regular;
+	font-size: 16px;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.clearfix{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.box{
+	.inline();
+	border: 1px solid #e8e8e8;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	&-item{
+		.inline();
+		position: relative;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-left: 1px solid #e8e8e8;
+		&:first-child{
+			border-left: none;
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-right: 0;
+		}
+		&-usergroup{
+			width: 70px;
+			text-align: center;
+			a{
+				color: #cacaca;
+				text-decoration: none;
+				position: relative;
+				top: -3px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@import "import/icon";
+@import "import/form";
+@import "import/header";
+@import "import/menu";
+
+
+.main{
+	font-size: 0;
+	&-content, &-sidebar{
+		.inline();
+		.box-sizing;
+		padding: 0 10px;
+		font-size: 1rem;
+	}
+	&-content{		
+		width: 715px;
+		border-right: 1px solid #eaeaea;
+		.section{
+			margin-bottom: 10px;
+			&-inline{
+				.inline();
+			}
+		}
+	}
+	&-sidebar{
+		width: 245px;
+	}
+}
+@import "import/section";
+@import "import/rating";
+@import "import/submenu";
+@import "import/bunner";
+@import "import/sidebar";

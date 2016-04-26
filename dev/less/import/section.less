@@ -1,0 +1,51 @@
+.section{
+	font-size: 0;
+	&-item{
+		.inline();
+		width: 340px;
+		margin-left: 12px;
+		margin-bottom: 12px;
+		&:nth-child(odd){
+			margin-left: 0;
+		}
+	}
+	&-prev{
+		border: 1px solid #eeeeee;
+		background-color: #fff;
+		padding: 5px;
+		&-wrap{
+			padding: 5px;
+			margin-bottom: 10px;
+			background-color: #fbfbfb;
+			border: 1px solid #eeeeee;
+		}
+	}
+	&-cover{
+		overflow: hidden;
+		margin-bottom: 10px;
+		img{
+			width: 100%;
+		}
+	}
+	&-caption{
+		position: relative;
+		padding-right: 75px;
+		color: #777777;
+		.title{
+			font-size: 12px;
+			font-family: "riad semibold";
+			margin-bottom: 5px;
+		}
+		.pubdate{
+			font-size: 11px;
+			font-family: "riad regular";
+		}
+	}
+	&-content{
+		text-align: justify;
+		font-size: 12px;
+		font-family: "riad regular";
+		color: #989898;
+		line-height: 14px;
+	}
+}

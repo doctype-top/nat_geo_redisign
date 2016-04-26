@@ -1,0 +1,43 @@
+.header{
+	padding: 40px 10px 0 10px;
+	margin-bottom: 40px;
+	text-align: right;
+	&-wrap{
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.logo{
+		width: 162px;
+		height: 48px;
+		background: url(../img/logo.png) no-repeat;
+		float: left;
+		a{
+			display: block;
+			height: 100%;
+		}
+	}
+	.dropdown{
+		display: inline-block;
+		cursor: pointer;
+		&:after{
+			content: '';
+			.inline(bottom);
+			margin-left: 10px;
+			border: 9px solid transparent;
+			border-top-color: #dddddd;
+		}
+	}
+	.box{
+		margin-left: 24px;
+		padding: 11px 9px;
+		height: 48px;
+		&-item{
+			height: 25px;
+		}
+		&-search{
+			line-height: 25px;
+		}
+	}
+}

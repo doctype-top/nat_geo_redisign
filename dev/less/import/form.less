@@ -1,0 +1,28 @@
+.form{
+	&-search{
+		color: #cacaca;
+		font-size: 15px;
+		input{
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: inherit;
+			&[type=submit]{
+				cursor: pointer;
+			}
+		}
+		#search{
+			width: 220px;
+			&::-webkit-input-placeholder{
+				color: #e7e7e7;
+				font-size: 15px;
+				font-style: italic;
+			}
+			&:-moz-placeholder{
+				color: #e7e7e7;
+				font-size: 15px;
+				font-style: italic;
+			}
+		}
+	}
+}
